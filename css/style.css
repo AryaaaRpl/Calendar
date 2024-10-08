@@ -1,0 +1,140 @@
+* {
+    font-family: "Comforta" , sans-serif;
+}
+
+.background-video {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  .calendar {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    max-width: 300px;
+    margin: 0;
+    padding: 75px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.calendar-navigation {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.calendar-current-date {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.day {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.calendar-grid {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-grid td {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.holidays {
+    padding: 20px;
+}
+
+#holiday-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#holiday-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#holiday-list li:last-child {
+    border-bottom: none;
+}
+
+/* Mark current date */
+.today {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    * {
+        background-image: url('https://images.pexels.com/photos/28823341/pexels-photo-28823341/free-photo-of-three-elegant-coffee-cups-on-white-table.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        color: white;
+
+    }
+
+    .today {
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 50%;
+    }
+    .calendar {
+        position: absolute;
+        max-width: 250px;
+        top: 30%;
+        left: 20%;
+        margin: 0 auto;
+    }
+    .day {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+    .calendar-grid td {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+}
+    
+
+@media (max-width: 480px) {
+    .calendar {
+        max-width: 200px;
+    }
+    .day {
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+    }
+    .calendar-grid td {
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+    }
+}

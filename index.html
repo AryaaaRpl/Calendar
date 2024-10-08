@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.4/plyr.css">
+<script src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
+</head>
+<body>
+    <div id="background-video" class="plyr">
+        <video>
+          <source src="vid/17599605-hd_1280_720_30fps.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="calendar">
+        <div class="calendar-header">
+            <span class="calendar-navigation">
+                <span class="prev" onclick="prevMonth()">&lt;</span>
+                <span class="next" onclick="nextMonth()">></span>
+            </span>
+            <span class="calendar-current-date"></span>
+        </div>
+        <div class="calendar-dates">
+            <div class="day">Sun</div>
+            <div class="day">Mon</div>
+            <div class="day">Tue</div>
+            <div class="day">Wed</div>
+            <div class="day">Thu</div>
+            <div class="day">Fri</div>
+            <div class="day">Sat</div>
+        </div>
+        <table class="calendar-grid">
+            <tbody>
+                <!-- days of the month will be rendered here -->
+            </tbody>
+        </table>
+        <div class="holidays">
+            <h2>Upcoming Holidays:</h2>
+            <ul id="holiday-list">
+                <!-- holiday predictions will be rendered here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
